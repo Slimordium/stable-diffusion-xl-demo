@@ -346,18 +346,11 @@ with block:
                   <rect x="23" y="69" width="23" height="23" fill="black"></rect>
                 </svg>
                 <h1 style="font-weight: 900; margin-bottom: 7px;margin-top:5px">
-                  Stable Diffusion XL 1.0 Demo
+                  Stable Diffusion XL 1.0
                 </h1>
               </div>
               <p style="margin-bottom: 10px; font-size: 94%; line-height: 23px;">
-                Stable Diffusion XL 1.0 is the latest text-to-image model from StabilityAI. 
                 <br/>
-                Source code of this space is on 
-                <a
-                  href="https://github.com/TonyLianLong/stable-diffusion-xl-demo"
-                  style="text-decoration: underline;"
-                  target="_blank"
-                  >TonyLianLong/stable-diffusion-xl-demo</a>.
               </p>
             </div>
         """
