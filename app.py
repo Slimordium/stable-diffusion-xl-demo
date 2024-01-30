@@ -447,7 +447,7 @@ with block:
             f"""
                 <div class="footer">
                     <p>
-                        This space uses {model_key_base} model{" with " + lcm_lora_id + " LCM LoRA" if enable_lcm else ""}. - Gradio Demo by 🤗 Hugging Face and <a style="text-decoration: underline;" href="https://tonylian.com/">Long (Tony) Lian</a> <br/>
+                        {model_key_base} model{" with " + lcm_lora_id + " LCM LoRA" if enable_lcm else ""}. <br/>
                     </p>
                 </div>
            """
