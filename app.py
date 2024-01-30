@@ -273,8 +273,28 @@ default_guidance_scale = 1 if enable_lcm else 9
     
 examples = [
     [
-        'Photo of rhino in African veldt',
+        'A high tech solarpunk utopia in the Amazon rainforest',
         'low quality',
+        default_guidance_scale
+    ],
+    [
+        'A pikachu fine dining with a view to the Eiffel Tower',
+        'low quality',
+        default_guidance_scale
+    ],
+    [
+        'A mecha robot in a favela in expressionist style',
+        'low quality, 3d, photorealistic',
+        default_guidance_scale
+    ],
+    [
+        'an insect robot preparing a delicious meal',
+        'low quality, illustration',
+        default_guidance_scale
+    ],
+    [
+        "A small cabin on top of a snowy mountain in the style of Disney, artstation",
+        'low quality, ugly',
         default_guidance_scale
     ],
 ]
@@ -326,11 +346,18 @@ with block:
                   <rect x="23" y="69" width="23" height="23" fill="black"></rect>
                 </svg>
                 <h1 style="font-weight: 900; margin-bottom: 7px;margin-top:5px">
-                  Stable Diffusion XL 1.0
+                  Stable Diffusion XL 1.0 Demo
                 </h1>
               </div>
               <p style="margin-bottom: 10px; font-size: 94%; line-height: 23px;">
+                Stable Diffusion XL 1.0 is the latest text-to-image model from StabilityAI. 
                 <br/>
+                Source code of this space is on 
+                <a
+                  href="https://github.com/TonyLianLong/stable-diffusion-xl-demo"
+                  style="text-decoration: underline;"
+                  target="_blank"
+                  >TonyLianLong/stable-diffusion-xl-demo</a>.
               </p>
             </div>
         """
@@ -427,7 +454,7 @@ with block:
             f"""
                 <div class="footer">
                     <p>
-                        {model_key_base} model{" with " + lcm_lora_id + " LCM LoRA" if enable_lcm else ""}. <br/>
+                        This space uses {model_key_base} model{" with " + lcm_lora_id + " LCM LoRA" if enable_lcm else ""}. - Gradio Demo by 🤗 Hugging Face and <a style="text-decoration: underline;" href="https://tonylian.com/">Long (Tony) Lian</a> <br/>
                     </p>
                 </div>
            """
