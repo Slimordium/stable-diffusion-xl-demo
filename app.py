@@ -352,7 +352,7 @@ with block:
               <p style="margin-bottom: 10px; font-size: 94%; line-height: 23px;">
                 Stable Diffusion XL 1.0 is the latest text-to-image model from StabilityAI. 
                 <br/>
-               </p>
+              </p>
             </div>
         """
     )
@@ -391,7 +391,12 @@ with block:
             label="Generated images", show_label=False, elem_id="gallery"
         ).style(grid=[2], height="auto")
 
-        
+        with gr.Group(elem_id="container-advanced-btns"):
+            #advanced_button = gr.Button("Advanced options", elem_id="advanced-btn")
+            with gr.Group(elem_id="share-btn-container"):
+                community_icon = gr.HTML(community_icon_html)
+                loading_icon = gr.HTML(loading_icon_html)
+                share_button = gr.Button("Share to community", elem_id="share-btn")
 
         with gr.Accordion("Advanced settings", open=False):
         #    gr.Markdown("Advanced settings are temporarily unavailable")
